@@ -31,11 +31,11 @@ class ContactFragment : Fragment() {
         val application = requireNotNull(this.activity).application
         val dataSource = AddContactDatabase.getInstance(application).addContactDatabaseDao
         val viewModelFactory = AddContactViewmodelFactory(dataSource, binding, application)
-        val contactViewModel =
+        val AddContactViewModel =
             ViewModelProvider(
                 this, viewModelFactory
             ).get(AddContactViewModel::class.java)
-        binding.contactViewModel = contactViewModel
+        binding.addcontactViewModel = AddContactViewModel
         binding.lifecycleOwner = this
 
         return binding.root
