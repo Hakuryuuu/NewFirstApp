@@ -11,5 +11,8 @@ data class AddContact (
     @ColumnInfo(name = "name")
     var name: String = "unnamed",
     @ColumnInfo(name = "phone")
-    var phone: String = ""
+    var phone: String = "",
+    @ColumnInfo(name = "age")
+    var age: String = "",
+
 )
