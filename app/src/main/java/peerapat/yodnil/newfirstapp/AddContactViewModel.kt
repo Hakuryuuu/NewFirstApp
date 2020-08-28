@@ -37,8 +37,6 @@ class AddContactViewModel(
                 append(", ")
                 append(it.phone)
                 append("<br>")
-                append(it.age)
-                append("<br>")
             }
         }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
